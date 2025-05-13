@@ -37,7 +37,7 @@ This is a Python script that uses ADB (Android Debug Bridge) to analyze the perm
 ## 🚀 How to Use
 
 1.  **Clone or Download the Script**:
-    Save the `app_permission_information.py` 
+    `app_permission_information.py` 
 
 2.  **Customize Dictionaries (Important)**:
     The script includes two important Python dictionaries. It is highly recommended to update and supplement them as needed for more accurate and comprehensive information:
