@@ -37,7 +37,7 @@
 ## 🚀 使用方法
 
 1.  **克隆或下载脚本**:
-    将 `app_permission_information.py`
+    `app_permission_information.py`
 
 2.  **自定义字典 (重要)**:
     脚本内置了两个重要的 Python 字典，强烈建议您根据需要进行更新和补充，以获得更准确和全面的信息：
