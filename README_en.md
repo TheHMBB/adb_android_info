@@ -55,7 +55,7 @@ This is a Python script that uses ADB (Android Debug Bridge) to analyze the perm
             # ... more apps
         }
         ```
-    The dictionaries you provided are quite extensive, but they may require ongoing maintenance as Android systems and apps evolve. For English output, you would need to translate the values in these dictionaries.
+    
 
 3.  **Run the Script**:
     Open a command-line terminal, navigate to the directory where the script is saved, and run:
