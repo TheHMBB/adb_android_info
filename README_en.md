@@ -37,7 +37,7 @@ This is a Python script that uses ADB (Android Debug Bridge) to analyze the perm
 ## 🚀 How to Use
 
 1.  **Clone or Download the Script**:
-    Save the `your_script_name.py` (please replace with your actual script filename) file to your computer.
+    Save the `app_permission_information.py` 
 
 2.  **Customize Dictionaries (Important)**:
     The script includes two important Python dictionaries. It is highly recommended to update and supplement them as needed for more accurate and comprehensive information:
@@ -60,7 +60,7 @@ This is a Python script that uses ADB (Android Debug Bridge) to analyze the perm
 3.  **Run the Script**:
     Open a command-line terminal, navigate to the directory where the script is saved, and run:
     ```bash
-    python your_script_name.py
+    python app_permission_information.py
     ```
 
 4.  **Follow the Prompts**:
