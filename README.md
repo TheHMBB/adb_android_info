@@ -1,4 +1,4 @@
-
+[English](README_en.md) | [简体中文](README.md)
 # ADB 安卓权限查看工具
 
 这是一个使用 Python 和 ADB (Android Debug Bridge) 来分析安卓设备上已安装应用权限的脚本。它可以帮助您了解应用请求了哪些权限、这些权限的用途以及它们的授予状态。
