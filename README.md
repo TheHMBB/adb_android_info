@@ -37,7 +37,7 @@
 ## 🚀 使用方法
 
 1.  **克隆或下载脚本**:
-    将 `your_script_name.py` (请替换为您的脚本实际文件名) 文件保存到您的计算机上。
+    将 `app_permission_information.py`
 
 2.  **自定义字典 (重要)**:
     脚本内置了两个重要的 Python 字典，强烈建议您根据需要进行更新和补充，以获得更准确和全面的信息：
@@ -60,7 +60,7 @@
 3.  **运行脚本**:
     打开命令行终端，导航到脚本所在的目录，然后运行：
     ```bash
-    python your_script_name.py
+    python app_permission_information.py
     ```
 
 4.  **按照提示操作**:
