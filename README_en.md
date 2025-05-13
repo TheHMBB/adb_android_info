@@ -1,3 +1,4 @@
+[English](README_en.md) | [简体中文](README.md)
 # ADB Android Permission Viewer
 
 This is a Python script that uses ADB (Android Debug Bridge) to analyze the permissions of installed applications on an Android device. It helps you understand which permissions applications request, their purpose, and their grant status.
