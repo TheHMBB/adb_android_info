@@ -1,5 +1,6 @@
 
 ---
+[English](permission_oprate_en.md) | [简体中文](permission_oprate.md)
 
 # 使用 ADB Shell 查看与管理 Android 应用信息、权限及 App Operations
 
