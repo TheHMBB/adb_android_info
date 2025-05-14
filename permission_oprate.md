@@ -1,5 +1,4 @@
 
----
 [English](permission_oprate_en.md) | [简体中文](permission_oprate.md)
 
 # 使用 ADB Shell 查看与管理 Android 应用信息、权限及 App Operations
@@ -329,4 +328,4 @@ adb shell dumpsys package com.example.someapp
 
 熟练掌握这些命令对于 Android 开发、测试、安全分析和高级系统管理非常有帮助。在使用这些强大的工具时，请务必理解每个命令的作用及其潜在影响。
 
----
+
