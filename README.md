@@ -128,6 +128,6 @@
 *   **字典更新**: 脚本的输出质量高度依赖于 `permission_descriptions` 和 `apps_dict` 字典的完整性和准确性。请定期更新它们。
 *   **权限状态解析**: "Granted Status" 的解析主要依赖 `granted=true/false` 标志。对于某些没有此明确标志的权限（如一些安装时固定的权限），脚本会尝试根据 `flags` 推断，但可能不如前者精确。
 
-## [ADB管理权限文档](permission_oprate.md)
+## [ADB工具管理权限文档](permission_oprate.md)
 
 
