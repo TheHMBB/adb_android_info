@@ -5,8 +5,6 @@
 
 本文档是一份综合指南，介绍如何使用 Android Debug Bridge (ADB) 的 `shell` 命令，结合 `pm` (Package Manager), `appops` (App Operations), 和 `dumpsys package` 工具，来获取 Android 设备上应用程序的详细信息，并管理它们的权限和 App Operations 状态。这些命令行工具为开发者、测试人员和高级用户提供了强大的功能，用于调试、分析和控制应用的行为。
 
-[TOC]
-
 ## 1. 前提条件
 
 在使用本文档中的任何命令之前，你需要满足以下基本条件：
