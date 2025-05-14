@@ -412,7 +412,43 @@ appop_descriptions = {
     "WRITE_MEDIA_VIDEO": "控制应用是否可以写入共享存储中的视频文件（Android 13+）。",
     "ACCESS_RESTRICTED_SETTINGS": "控制应用是否可以引导用户进入特定系统设置页面以授予受限权限（如无障碍服务、通知监听器等）。",
     "FINE_LOCATION": "控制应用是否可以访问精确的地理位置信息（例如基于 GPS）。",
-    "WRITE_MEDIA_AUDIO": "控制应用是否可以写入共享存储中的音频文件（Android 13+）。"
+    "WRITE_MEDIA_AUDIO": "控制应用是否可以写入共享存储中的音频文件（Android 13+）。",
+    
+    "MOCK_LOCATION": "允许应用创建模拟位置数据，用于测试或覆盖真实位置。",
+    "NEIGHBORING_CELLS": "允许应用访问设备蜂窝网络信息，包括附近的基站。",
+    "AUDIO_MEDIA_VOLUME": "允许应用控制媒体播放音量。",
+    "READ_DEVICE_IDENTIFIERS": "允许应用读取设备的持久性标识符，如 IMEI 或 MEID。",
+    "USE_ICC_AUTH_WITH_DEVICE_IDENTIFIER": "允许应用结合设备标识符使用 SIM 卡 (ICC) 认证机制。",
+    "ZTE_WRITE_MSG": "中兴设备特定：允许应用编写消息（很可能是短信/彩信）。",
+    "ZTE_CALL_FORWARD": "中兴设备特定：允许应用管理呼叫转移设置。",
+    "POST_NOTIFICATION": "允许应用在状态栏发布通知。",
+    "AUDIO_ALARM_VOLUME": "允许应用控制闹钟音量。",
+    "MONITOR_HIGH_POWER_LOCATION": "允许应用使用高精度方法（如 GPS）持续监控设备位置。",
+    "ACCESS_ACCESSIBILITY": "允许应用访问辅助功能服务，可能与其它应用的界面进行交互。",
+    "VIBRATE": "允许应用控制设备的振动器。",
+    "MONITOR_LOCATION": "允许应用使用较低电量方法持续监控设备位置。",
+    "ZTE_MMS_SEND": "中兴设备特定：允许应用发送彩信。",
+    "MANAGE_MEDIA": "允许应用管理媒体文件（例如，修改、删除）。",
+    "ZTE_CONFERENCE_CALL": "中兴设备特定：允许应用管理电话会议。",
+    "START_FOREGROUND": "允许应用启动前台服务（在后台运行并带有持久通知）。",
+    "GPS": "允许应用访问设备的 GPS 接收器以获取位置数据。",
+    "ESTABLISH_VPN_SERVICE": "允许应用建立和管理 VPN（虚拟专用网络）连接。",
+    
+    "android.permission.AUDIO_VOICE_VOLUME": "控制语音通话音量",
+    "android.permission.MANAGE_IPSEC_TUNNELS": "管理 IPsec 隧道",
+    "android.permission.AUDIO_RING_VOLUME": "控制铃声音量",
+    
+    "PHONE_CALL_MICROPHONE": "控制通话期间麦克风的使用 (App Op)",
+    "PHONE_CALL_CAMERA": "控制通话期间相机的使用 (如视频通话) (App Op)",
+    "AUDIO_RING_VOLUME": "控制铃声音量的调整 (App Op)",
+    "AUDIO_BLUETOOTH_VOLUME": "控制蓝牙音频音量的调整 (App Op)",
+    "MANAGE_IPSEC_TUNNELS": "管理 IPsec 隧道 (通常是系统/签名权限)",
+    "AUDIO_NOTIFICATION_VOLUME": "控制通知音量的调整 (App Op)",
+    "ACTIVITY_RECOGNITION_SOURCE": "控制从特定源获取活动识别数据 (App Op)",
+    "AUDIO_VOICE_VOLUME": "控制语音通话音量的调整 (App Op)",
+    "READ_WRITE_HEALTH_DATA": "读取/写入健康数据 (App Op)",
+    "SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS": "允许发送不可清除的通知 (通常是系统/签名权限)",
+    "FINE_LOCATION_SOURCE": "控制从特定源获取精确位置数据 (App Op)"
 }
 
 
@@ -1040,17 +1076,11 @@ def get_app_ops_for_package(package_name):
 
     return app_ops_info
 
-unknow_oprate: list[str] = []
+
 def get_appop_description(appop_name):
     """获取 App Op 的描述"""
-    # return appop_descriptions.get(appop_name.upper(), "未找到明确定义或用途未知") # 使用 upper() 进行不区分大小写的查找
-    try:
-        res: str = appop_descriptions[appop_name.upper()]
-    except Exception as e:
-        res: str = "未找到明确定义或用途未知"
-        unknow_oprate.append(appop_name.upper())
-    finally:
-        return res
+    return appop_descriptions.get(appop_name.upper(), "未找到明确定义或用途未知") # 使用 upper() 进行不区分大小写的查找
+    
 
 
 def write_to_txt(file_path, content_list):
@@ -1262,5 +1292,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    for i in list(set(unknow_oprate)):
-        print(i)
+
