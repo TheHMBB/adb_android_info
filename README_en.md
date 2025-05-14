@@ -133,4 +133,5 @@ This is a Python script that uses ADB (Android Debug Bridge) to analyze the perm
 *   **Dictionary Updates**: The quality of the script's output heavily depends on the completeness and accuracy of the `permission_descriptions` and `apps_dict` dictionaries. Update them periodically. For English output, these dictionaries need to be translated.
 *   **Permission Status Parsing**: The "Granted Status" parsing primarily relies on the `granted=true/false` flag. For some permissions without this explicit flag (like some install-time fixed permissions), the script attempts to infer status from `flags`, but this might be less precise.
 
-
+## [ADB management permission document](permission_oprate.md)
+---
