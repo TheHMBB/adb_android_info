@@ -129,5 +129,5 @@
 *   **权限状态解析**: "Granted Status" 的解析主要依赖 `granted=true/false` 标志。对于某些没有此明确标志的权限（如一些安装时固定的权限），脚本会尝试根据 `flags` 推断，但可能不如前者精确。
 
 ## [ADB管理权限文档](permission_oprate.md)
----
+
 
