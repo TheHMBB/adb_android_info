@@ -1,5 +1,4 @@
 
----
 [English](permission_oprate_en.md) | [简体中文](permission_oprate.md)
 
 # Using ADB Shell to View and Manage Android App Information, Permissions, and App Operations
@@ -243,6 +242,6 @@ This is an important distinction:
 
 App Ops can override runtime permissions. For example, even if `pm grant` is used to give an app camera permission, if the app’s `CAMERA` App Op is set to `deny`, the app still can’t use the camera.
 
----
+
 
 
