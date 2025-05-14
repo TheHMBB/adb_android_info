@@ -135,6 +135,7 @@ Each App Op has a name (like `CAMERA`, `READ_CLIPBOARD`, `VIBRATE`) and a state:
 *   `deny`: The operation is explicitly denied.
 *   `ignore`: The request for the operation is ignored (the app may not receive an error, but the operation won't execute).
 *   `default`: Reverts to the system's default behavior. The default behavior usually depends on the runtime permission status, Manifest declarations, and system policies.
+*   `foreground`: means that the app can only perform the action when its activity interface is visible, is running a foreground service, or is otherwise considered to be in the foreground by the system. When the app goes to the background, the action will be restricted or denied.
 
 ### 4.2. `appops` Basic Usage
 
