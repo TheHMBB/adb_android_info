@@ -145,7 +145,7 @@ adb shell appops <command> [options] <package_name> [app_op_name] [state]
 *   `[options]`: 可选参数。
 *   `<package_name>`: 要操作的应用的包名。
 *   `[app_op_name]`: 可选的 App Op 名称。
-*   `[state]`: 对于 `set` 命令，要设置的状态 (`allow`, `deny`, `ignore`, `default`)。
+*   `[state]`: 对于 `set` 命令，要设置的状态 (`allow`, `deny`, `ignore`, `default`, `foreground`)。
 
 ### 4.3. 常用 `appops` 命令详解
 
